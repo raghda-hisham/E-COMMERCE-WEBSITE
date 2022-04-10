@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--./fontawsome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+      <!--./styles-->
+    <link href="css/cart.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+
+    <link rel="icon" href="imgs/Maqam Studios Final-1.png" type="image/gif" sizes="16x16">
+    <title>cart</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav__button nav__button-hover">
+        <span>&nbsp;</span>
+    </div>
+    <div class="nav__menu">
+        <a href="index.html">
+            <div class="logo">
+                <img src="imgs/Maqam Studios Final-1.png" alt="Uxphenomena logo">
+            </div>
+        </a>
+        <div class="nav__menu__list">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="product.html" class="nav__link">product</a>
+            <a href="cart.html" class="nav__link">Cart</a>
+            <a href="login.html" class="nav__link">Login</a>
+            <a href="settings.html" class="nav__link">Settings</a>
+        </div>
+
+    </div>
+    </div>
+    <!-- end nav -->
+    <main>
+        <div class="container  text-light">
+          <h1 class="myCart-num">MY CART(<span class="num">0</span> item)</h1>
+          <table class="table mt-5 text-light">
+              <thead>
+                  <th class="item">ITEM</th>
+                  <th class="text-center quantity" >QUANTITY</th>
+                  <th class="text-center unit">UNIT PRICE</th>
+                  <th class="text-center subtotal">SUBTOTAL</th>
+              </thead>
+              <tbody id="tableBody" class="bg-light text-dark">
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td class="border-0 totalPrice">total price :<span id="totalPrice">0</span></td>
+                  </tr>
+              </tfoot>
+          </table>
+           <div class="cards">
+           </div>
+        </div><!--./container-->
+        <div class="bg-light w-100 mt-5 text-center p-2">
+                <div class="TotalPrice  justify-content-between ">
+                    <span >total</span>
+                    <span class="price">120.00EGP</span>
+                </div><!--./TotalPrice-->
+               <a href="tel:01063480803"> <button class="btn call-to-order me-3">call to order</button></a>
+                <a class="complite-order-link" href="payment.html"><button class="btn complite-your-order" >complite your order</button></a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img class="footer-logo" src="imgs/CRVD-LOGOfinal.png" alt=""> <br>
+            <p class="footer-text">Stay informed, subscribe to our OFFERS!</p>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname"> <br>
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+        <div class="social-media-holder">
+            <h1 class="social-media">Social Media</h1>
+            <div class="flex-div">
+                <a class="social-item link-items" href="#">Facebook</a>
+                <a class="social-item link-items" href="#">Instagram</a>
+                <a class="social-item link-items" href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="privacy-holder">
+            <h1 class="Policy">Policy</h1>
+            <div class="flex-div">
+                <a class="policy-item link-items" href="#">Privacy Policy</a>
+                <a class="policy-item link-items" href="#">Terms&Conditions</a>
+            </div>
+        </div>
+        <div class="location-holder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13818.016403879974!2d30.99910269703188!3d30.02239252807758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585a182c7fbc0b%3A0xa6dc4c3139bb0c14!2sFavilla%20Lounge!5e0!3m2!1sen!2seg!4v1569757358329!5m2!1sen!2seg"
+                width="100%" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <button class="call-btn"><span>Call NOW</span></button>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js" ></script>
+    <script src="js/cartLang.js" ></script>
+</body>
+</html>

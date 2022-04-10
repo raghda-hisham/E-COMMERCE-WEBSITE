@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #082032;
+}
+/***************************header******************************************/
+
+.header{
+    margin-top: 4%;
+    margin-bottom: 50px;
+}
+.header h2{
+    font-size: 60px;
+}
+.iconContainer{
+    width:260px;
+    height: 120px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+
+}
+.iconContainer i{
+    color: #2699FB;
+    font-size: 40px;
+    position:absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/*******************************container**************************************/
+.container{
+    width: 60%;
+    margin: auto;
+    color: white;
+}
+.form-title{
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+label{
+    font-size: 18px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+input,select{
+    margin-bottom: 8px;
+}
+.visa{
+    position: relative;
+}
+.fa-cc-visa{
+position: absolute;
+right: -50px;
+top: 0px;
+font-size: 40px;
+/* color: #2699FB; */
+
+}
+@media (max-width:800px) {
+.container{
+    width: 80%;
+}
+.form-title{
+    margin-top: 20px;
+}
+}

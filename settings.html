@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+     
+        <!--./bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="css/settings.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <link rel="icon" href="imgs/Maqam Studios Final-1.png" type="image/gif" sizes="16x16">
+    <title>Settings | Home</title>
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav__button nav__button-hover">
+            <span>&nbsp;</span>
+        </div>
+        <div class="nav__menu">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="imgs/Maqam Studios Final-1.png" alt="Uxphenomena logo">
+                </div>
+            </a>
+            <div class="nav__menu__list">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="product.html" class="nav__link">product</a>
+                <a href="cart.html" class="nav__link">Cart</a>
+                <a href="login.html" class="nav__link">Login</a>
+                <a href="settings.html" class="nav__link">Settings</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- end nav -->
+    <section class="settings-section">
+        <!-- start nav -->
+
+
+        <div class="settings-list">
+            <button class="settings-item" id="profile">My Profile</button>
+            <button class="settings-item" id="orders">My Orders</button>
+            <button class="settings-item" id="lang">Country&Language</button>
+            <button class="settings-item" id="about-us" onclick="privacy()">About Us</button>
+            <button class="settings-item" id="terms" onclick="privacy()">Terms&Conditions</button>
+            <button class="settings-item" id="privacy" onclick="privacy()">Privacy Policy</button>
+            <button class="settings-item" ><a class="log-out" href="login.html" style="color: #FF9D1C;">Log Out</a></button>
+        </div>
+        <div class="show-info">
+             <div class="container profileList">
+                 <div class="address-header d-flex  justify-content-between mb-4 pt-2">
+                     <h5 id="title1">ADDRESS BOOK</h5>
+                     <a style="color: #FF9D1C;" id="change">change</a>
+                 </div>
+                 <div class="w-100 bg-dark line"></div>
+                 <ul class="list">
+                     <li id="listAdd">Your default shipping address:</li>
+                     <li>Ehab Hossam</li>
+                     <li>عماره رقم 23 شقه 401</li>
+                     <li>+20 1142128438</li>
+                     <li>6th of October, Giza</li>
+                 </ul>
+             </div><!--./profileList-->
+             <div class="container OrderList">
+                <div class="address-header d-flex  justify-content-between mb-4 pt-2">
+                    <h5 id="title2">YOUR ORDERS</h5>
+                </div>
+                <div class="w-100 bg-dark line"></div>
+             </div><!--./orderList-->
+             <div class="container LngList">
+                <div class="address-header d-flex  justify-content-between mb-4 pt-2">
+                    <h5 id="title3">COUNTRY & LANGUAGE</h5>
+                </div>
+                <div class="w-100 bg-dark line"></div>
+                <!-- <select>
+                    <option>egypt</option>
+                    <option>uae</option>
+                </select> -->
+                <p>language:</p>
+                  <input type="radio" id="english" name="fav_language" value="en"  onclick="english()">
+                  <label for="en"  onclick="english()">english</label>
+                  <input type="radio" id="ar" name="fav_language" value="ar" onclick="arabic()">
+                  <label for="ar" onclick="arabic()">arabic</label>
+             </div><!--./LngList-->
+             <div class="container privacy  List">
+                <div class="address-header d-flex  justify-content-between mb-4 pt-2">
+                    <h5 id="title4">PRIVACY POLICY</h5>
+                </div>
+                <div class="w-100 bg-dark line"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam sed exercitationem ab temporibus illo vitae atque, odit nisi cum sequi ratione iusto fuga debitis hic repellat porro consequatur sint perferendis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus eligendi inventore sequi fuga quos quod nobis iure, exercitationem laboriosam dolor est incidunt, omnis explicabo, dolorem neque fugiat. Accusantium, dicta?
+                </p>
+             </div>
+
+        </div>
+
+
+    </section>
+    <footer>
+        <div>
+            <img class="footer-logo" src="imgs/CRVD-LOGOfinal.png" alt=""> <br>
+            <p class="footer-text">Stay informed, subscribe to our OFFERS!</p>
+            <form>
+                <label class="fname" for="fname">First Name</label>
+                <input type="text" id="fname" name="fname"> <br>
+                <button type="submit" id="submit">Submit</button>
+
+            </form>
+        </div>
+        <div class="social-media-holder">
+            <h1 class="social-media">Social Media</h1>
+            <div class="flex-div">
+                <a class="social-item link-items fb" href="#">Facebook</a>
+                <a class="social-item link-items insta" href="#">Instagram</a>
+                <a class="social-item link-items twitter" href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="privacy-holder">
+            <h1 class="Policy">Policy</h1>
+            <div class="flex-div">
+                <a class="policy-item link-items PrivacyPolicy " href="#">Privacy Policy</a>
+                <a class="policy-item link-items terms" href="#">Terms&Conditions</a>
+            </div>
+        </div>
+        <div class="location-holder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13818.016403879974!2d30.99910269703188!3d30.02239252807758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585a182c7fbc0b%3A0xa6dc4c3139bb0c14!2sFavilla%20Lounge!5e0!3m2!1sen!2seg!4v1569757358329!5m2!1sen!2seg"
+                width="100%" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <button class="call-btn"><span>Call NOW</span></button>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/settingsLang.js"></script>
+    <script src="js/Settings.js"></script>
+</body>
+
+</html>

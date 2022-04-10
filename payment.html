@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--./bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--./fontawsome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="icon" href="imgs/Maqam Studios Final-1.png" type="image/gif" sizes="16x16">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header text-center text-light">
+            <h1>payment</h1>
+            <div class="bg-light iconContainer">
+                <i class="fas fa-money-check"></i>
+            </div>
+        </div><!--./header-->
+    </header>
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-5 col-m-10 ">
+                     <h5 class="form-title">Billing Info</h5>
+                     <label for="userName">FULL NAME</label>
+                     <input type="text" class="form-control" id="userName" placeholder="John Due">
+                     <label for="Address">Address</label>
+                     <input type="text" class="form-control" id="Address" placeholder="497 Evergreen Rd.">
+                     <div class="row">
+                         <div class="col">
+                         <label for="CITY">CITY</label>
+                         <input type="text" class="form-control" id="CITY" placeholder="Roseville">
+                         </div>
+                         <div class="col">
+                         <label for="CITY">CITY</label>
+                         <input type="text" class="form-control" id="CITY" placeholder="Roseville">
+                         </div>
+                     </div>
+                     <label for="COUNTRY">COUNTRY</label>
+                     <select class="w-100 form-control">
+                         <option>United States</option>
+                         <option>United States</option>
+
+                         <option>United States</option>
+                     </select>
+            </div>
+                <div class="col-lg-5 col-m-10">
+                         <h5 class="form-title">Credit Card Info</h5>
+                         <div class="row">         
+                               <label for="CARD">CARD NUMBER</label>
+                               <div class="col-8 visa">
+                               <input type="text" class="form-control" id="CARD" placeholder="1234   5678   3456   2456">
+                               <i class="fab fa-cc-visa "></i>
+                               </div>
+                            <div class="col-4">
+                            </div>
+                           </div>
+                         <label for="CARDHOLDER">CARDHOLDER NAME</label>
+                         <input type="text" class="form-control" id="CARDHOLDER" placeholder="John Due">
+                         <label for="EXPIRE-DATE">EXPIRE DATE</label>
+                         <select class="w-100 form-control" id="EXPIRE-DATE">
+                             <option>05   /   21</option>
+                             <option>05   /   21</option>
+                             <option>05   /   21</option>
+                         </select>
+                         <label for="CVV">CVV</label>
+                         <input type="text" class="form-control w-25" id="CVV" placeholder="123">
+
+                </div>
+            
+    
+        </div>
+        
+    </div>
+    
+</body>
+</html>
